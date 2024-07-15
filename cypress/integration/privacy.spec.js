@@ -1,5 +1,8 @@
-it('testa a página da política de privacidade de forma independente', function() {
-    cy.visit('./src/privacy.html')
-    
-    cy.contains('Talking About Testing').should('be.visible')
+// executar o teste 3 vezes usando lodash
+Cypress._.times(3, function() {
+    it('testa a página da política de privacidade de forma independente', function() {
+        cy.visit('./src/privacy.html')
+        
+        cy.contains('Talking About Testing').should('be.visible')
+    })
 })
